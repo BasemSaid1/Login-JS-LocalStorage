@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(36, 53, 63);
+}
+h2 {
+  color: rgb(23, 162, 184);
+}
+h1 {
+  color: rgb(23, 162, 184);
+}
+
+.cardimg {
+  background-color: rgb(36, 53, 63);
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.cardim {
+  background-color: rgb(36, 53, 63);
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  height: 150px;
+  margin-top: 200px;
+  padding-top: 50px;
+}
+p a {
+  text-decoration: none;
+  color: white;
+}
+p a:hover {
+  text-decoration: underline;
+}
+p {
+  color: white;
+}
+input {
+  background-color: transparent !important;
+}
+input::placeholder {
+  color: white !important;
+}
+.bgg {
+  background-color: rgb(36, 53, 63);
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.form-container {
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* تأثير الحركة فقط */
+  position: relative;
+  z-index: 1;
+}
+
+.form-container:hover {
+  animation: glow 2s infinite; /* تطبيق الأنيميشن */
+  transform: translateY(-5px); /* تأثير الارتفاع */
+}
+
+/* إنشاء تأثير النور المتغير */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.8); /* أحمر */
+  }
+  25% {
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8); /* أخضر */
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(0, 0, 255, 0.8); /* أزرق */
+  }
+  75% {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 0, 0.8); /* أصفر */
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 255, 0.8); /* بنفسجي */
+  }
+}
